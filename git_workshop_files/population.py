@@ -4,6 +4,7 @@ with open("data/cities.csv", "r") as f:
 total = 0
 for line in lines:
     name, population = line.split(",")
+    print(f"adding {name} to {location}")
     total += int(population)
 
 print(f"Total population: {total:,}")
